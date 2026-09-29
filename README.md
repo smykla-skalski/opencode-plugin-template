@@ -21,8 +21,9 @@ OpenCode V2 reads the default export's `id` and `setup()`. See the
 The CI, release workflow, mise tools, and lint configs are copied from the
 [organization sync catalog](https://github.com/smykla-skalski/.github/tree/main/sync).
 Smyklot proposes later catalog changes as pull requests. Select `base`,
-`typescript`, and `opencode-plugin` profiles for this repository. Keep
-package-specific mise tasks here as repository overrides.
+`typescript`, and `opencode-plugin` profiles for this repository. Common mise
+tools and lint tasks live in `mise/conf.d/00-shared.toml`; package-specific
+tasks live in `mise.toml`.
 
 ## Publishing
 
