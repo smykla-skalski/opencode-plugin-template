@@ -1,0 +1,29 @@
+{
+  "name": "opencode-plugin-template",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Starter for an OpenCode V2 plugin",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "engines": {
+    "opencode": ">=2.0.19"
+  },
+  "peerDependencies": {
+    "@opencode/plugin": ">=2.0.19"
+  },
+  "devDependencies": {
+    "@opencode/plugin": "2.0.19",
+    "@types/node": "24.19.0",
+    "typescript": "7.0.2"
+  },
+  "scripts": {
+    "typecheck": "tsc -p .",
+    "test": "node --experimental-strip-types --test test/*.test.ts"
+  }
+}
